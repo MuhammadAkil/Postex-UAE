@@ -1,0 +1,37 @@
+.number-navigation button.active {
+    color: #ff9900; /* Change this to your primary color */
+  }
+  
+  .number-navigation button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .number-navigation button:hover {
+    color: #ff9900; 
+  }
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hide-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+  .transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  }
+  .main{
+    position: relative !important;
+  }
+  .snapping {
+    scroll-snap-type: y mandatory;
+  }
+  .scroll-snap{
+    scroll-snap-align: center;
+  }

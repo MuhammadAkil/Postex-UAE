@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url(./assets/fonts/fonts.scss);
+
+:root{
+    --d9: #D9D9D9;
+    --sec-clr:#00DF9A;
+    --primary-clr:#1A1A1A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'proxima-nova-regular';
+    letter-spacing: 2px;  
+}
+
+body{
+    background:var(--primary-clr);
+}
+.primary-color{
+    color: #00DF9A;
+}
+
+.bg-primary{
+    background-color: #00DF9A !important;
+}

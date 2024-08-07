@@ -1,0 +1,15 @@
+<div class="h-[800px] max-w-[1442px] mx-auto px-[24px] py-20 bg-white" >
+<div class="flex flex-col ">
+   <p class="text-base font-semibold text-[#8C8C8C]">Why <span class="text-black">PostEx.</span></p>
+   <h1 class="font-semibold text-[38px] leading-[46px] capitalize py-2">PostEx. manage your all <br><span class="text-[--sec-clr]"> ecommerce operations</span></h1>
+   <p class="text-[#525252] text-base font-normal">Manage All Yours Ecommerce Operations and <br> Warehouse With PostEx.</p>
+</div>
+<div class="flex lg:flex-row flex-col gap-[16px] mt-16 mb-2">
+    <div *ngFor="let stat of stats" class="w-full lg:min-w-[350px] min-h-[291px] rounded-[16px] group py-[24px] px-[40px] flex flex-col gap-3 justify-center bg-[#F9F9F9]">
+        <img class="w-[36px] h-[36px]" src="assets/svgs/{{stat.image}}" alt={{stat.title}}>
+        <h2 class=" font-semibold leading-[24px] text-[20px] text-[#1A1A1A]">{{ stat?.title }}</h2>
+      <p class="text-[#8C8C8C] text-[1rem] leading-[20px] font-normal max-w-[297px]">{{ stat?.description }}</p>
+      <a class="text-[#262626] font-semibold text-[14px] flex hover:text-[--sec-clr]" >Learn More <img src="assets/svgs/right-arrow.svg" alt="arrow"></a>
+    </div>
+  </div> 
+</div>

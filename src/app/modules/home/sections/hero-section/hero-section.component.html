@@ -1,0 +1,30 @@
+<div id="get-started-section" class="mx-auto max-w-[1442px] w-full">
+    
+        <div [@enter] [@leave] class="flex-column-space-around ">
+            <div class="relative">
+                <div class="ps-[24px] pt-20 textWrap my-auto flex flex-col items-center justify-center lg:justify-start lg:items-start">
+                    <div class="flex items-center lg:items-start lg:justify-start justify-center ">
+                        <div class="title capitalize">PostEx<span class="text-[--sec-clr]">.</span> manage your<br> All <span class="primary-color" id="changeText"></span></div>
+                        
+                    </div>
+                    <div class="description ">
+                        Manage All Yours Ecommerce Operations and <br> Warehouse With PostEx.</div>
+                    <div class="button-border">
+                        <div class="border hidden"></div>
+                        <button routerLink="/signup">Book Demo</button>
+                    </div>
+                </div>
+                <div class="bannerImage flex items-center flex-col absolute right-[-10px] top-0">
+                    <div class="bannerImageWrap desktop md:absolute right-2 relative">
+                        <img *ngIf="contextImage" class="rounded-md" [src]="contextImage" alt="{{contextList[index].text}} image"  [@enterImage] [@leaveImage]>
+                    </div>
+                    <!-- <div class="bannerImageWrapMobile ">
+                    <div class="border"></div>
+                    <div class="banner1" *ngIf="capitalImage" [@enterImage] [@leaveImage]>
+                    </div>
+                    <div class="banner2" *ngIf="fundingImage" [@enterImage] [@leaveImage]></div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </div>

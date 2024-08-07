@@ -1,0 +1,363 @@
+#get-started-section {
+	padding: 160px 0px;
+}
+
+#get-started-section {
+	background:var(--primary-clr);
+	min-height: 781px;
+	height: 100%;
+	// max-height: calc(100vh - 90px);
+	width: 100%;
+	overflow: hidden;
+
+	.w-50 {
+		width: 50%;
+		padding: 20px;
+	}
+
+	.m15 {
+		margin: 15px;
+	}
+
+	.title {
+		font-weight: 600;
+		font-size: 47px;
+		line-height: 57px;
+		color: #ffffff;
+	}
+
+	.description {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 23px;
+		line-height: 28px;
+		color: #8a8f98;
+		max-width: 673px;
+		margin: 10px 0 20px 0;
+	}
+
+	.input-section {
+		border: 1px solid #8a8f98;
+		height: 130px;
+		width: 481px;
+		margin-top: 9px;
+		margin-bottom: 9px;
+		margin-left: 15px;
+
+		input {
+			margin: -12px;
+			height: 130px;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 80px;
+			line-height: 120px;
+			width: 100%;
+			outline: none !important;
+			padding-left: 24px;
+			color: #050505;
+		}
+	}
+
+	.button-border {
+		width: 249px;
+		height: 80px;
+		border-radius: 10px;
+		margin-left: 0;
+
+		button {
+			&:hover {
+				transition: all 0.3;
+				background-color: #1daa7d;
+			}
+
+			// background: #00df9a;
+			border-radius: 100px;
+			border: 1px solid var(--sec-clr);
+			padding: 8px 16px 8px 16px;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+			background-color: var(--sec-clr);
+			
+		}
+	}
+}
+
+.bannerImage {
+	// border: 1px solid #00df9a;
+	// border-radius: 10px;
+	width: 695px;
+	min-height: 499px;
+	// position: relative;
+
+	& .bannerImageWrap {
+		// position: absolute;
+		// top: 20px;
+		// right: -20px;
+	}
+
+	& img {
+		border-radius: 10px;
+		width: 695px;
+	}
+}
+
+.bannerImage:hover {
+	& .bannerImageWrap {
+		// top: 10px;
+		// right: 10px;
+	}
+}
+
+.changeTextWrap {
+	width: 481px;
+	height: 130px;
+	// background-color: #fff;
+	margin-left: -13px;
+	margin-top: -11px;
+	padding-left: 15px;
+}
+
+::ng-deep .changeTextWrap #changeText {
+	font-weight: 700 !important;
+	font-size: 68px !important;
+	line-height: 120px !important;
+	color: #050505 !important;
+
+	& .Typewriter__cursor {
+		font-weight: 400;
+		font-size: 60px;
+	}
+}
+
+// media Queries
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+	#get-started-section {
+
+		& .textWrap {
+			& .title {
+				font-size: 50px;
+				line-height: 65px;
+				width: 16ch;
+			}
+
+			& .input-section {
+				width: 460px;
+				height: 110px;
+				margin-top: 25px;
+			}
+
+			& .description {
+				max-width: 600px;
+				text-align: center;
+			}
+		}
+	}
+
+	.changeTextWrap {
+		color: #00df9a;
+	}
+
+	::ng-deep .changeTextWrap #changeText {
+		font-weight: 700 !important;
+		font-size: 70px !important;
+		line-height: 100px !important;
+		color: #050505 !important;
+
+		& .Typewriter__cursor {
+			font-weight: 400;
+			font-size: 50px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#get-started-section {
+		padding-top: 140px;
+		padding-bottom: 30px;
+
+		.textWrap {
+			text-align: center;
+
+			& .title {
+				line-height: 32px;
+				margin-bottom: 12px;
+				width: 16ch;
+				font-size: 26px;
+			}
+
+			& .input-section {
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 25px;
+				margin-bottom: 26px;
+			}
+
+			& .description {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				font-size: 14px;
+				line-height: 17px;
+			}
+
+			.button-border {
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 52px;
+			}
+		}
+
+		& .bannerImage {
+				width: 100%;
+
+			left: 50%;
+			transform: translateX(-50%);
+			margin-bottom: 60px;
+			border: 0;
+			min-height: 280px;
+
+			& .bannerImageWrap {
+				// position: absolute;
+				left: 50px;
+
+				& img {
+					width: 80%;
+				}
+
+			}
+
+			& .bannerImageWrapMobile {
+				& .border {
+					position: absolute;
+					bottom: -10px;
+					left: -10px;
+					width: 100%;
+					height: 100%;
+					border: 1px solid #00df9a;
+					border-radius: 10px;
+				}
+
+				& .banner1 {
+					// background-image: url(../../../../../assets/images/home/banner.jpg);
+					width: 100%;
+					min-height: 500px;
+					background-position: center center;
+					background-size: 100%;
+					border-radius: 10px;
+					position: relative;
+					background-repeat: no-repeat;
+				}
+
+				& .banner2 {
+					// background-image: url(../../../../../assets/images/finance/business-account-banner.png);
+					width: 100%;
+					height: 500px;
+					background-position: center center;
+					background-size: 100%;
+					border-radius: 10px;
+					position: relative;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 425px) {
+		#get-started-section {
+			& .textWrap {
+				& .title {
+					font-size: 26px;
+					line-height: 32px;
+					font-weight: 600;
+					margin-bottom: 10px;
+					width: 16ch;
+				}
+
+				& .input-section {
+					width: 340px;
+					height: 90px;
+					margin-bottom: 25px;
+
+					& .changeTextWrap {
+						width: inherit;
+						height: inherit;
+					}
+				}
+
+				& .description {
+					font-size: 15px;
+					line-height: 18px;
+					margin-bottom: 24px;
+					max-width: 320px;
+
+					& br {
+						display: block;
+					}
+				}
+
+				& .button-border {
+					margin-bottom: 50px;
+					margin-top: 12px;
+					width: 240px;
+					height: 61px;
+
+					& button {
+						font-size: 18px;
+						line-height: 21px;
+					}
+				}
+			}
+
+			& .bannerImage {
+				width: 95%;
+
+				& .bannerImageWrap {
+					width: 100%;
+					height: 100%;
+					left: 0px;
+
+					& img {
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+
+			& .bannerImage {
+				& .bannerImageWrapMobile {
+					& .banner1 {
+						min-height: 300px;
+					}
+
+					& .banner2 {
+						height: 300px;
+					}
+				}
+			}
+		}
+
+		::ng-deep .changeTextWrap #changeText {
+			font-size: 40px !important;
+			line-height: 80px !important;
+
+			& .Typewriter__cursor {
+				font-weight: 400;
+				font-size: 40px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 400px) {
+		.bannerImage {
+			& .bannerImageWrapMobile {
+				& .banner1 {
+					min-height: 480px !important;
+				}
+				& .banner2 {
+					height: 480px !important;
+				}
+			}
+		}
+	}
+}

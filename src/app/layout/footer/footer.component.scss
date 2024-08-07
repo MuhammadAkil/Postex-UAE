@@ -1,0 +1,245 @@
+#footer {
+    // min-height: 550px;
+    // background: rgb(18,26,34);
+    // background: linear-gradient(0deg, rgba(18,26,34,1) 0%, rgba(17,21,26,1) 42%, rgba(17,21,26,1) 73%, rgba(5,5,5,1)100%);
+    background: white;
+    // background: linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, rgba(0, 77, 53, 1) 100%);
+    padding: 50px 20px;
+    bottom: 0;
+
+    .m-50 {
+        margin: 50px;
+    }
+
+    .mt-50 {
+        margin-top: 50px;
+    }
+
+    .description {
+        min-height: 21px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #525252        ;
+        width: 50ch;
+    }
+
+    .input {
+        box-sizing: border-box;
+        width: 360px;
+        height: 42px;
+        // background: #171C21;
+        border-radius: 5px;
+        outline: none !important;
+        border: none;
+        padding: 9px 12px;
+    }
+
+    .bold {
+        font-weight: 600;
+    }
+
+    .svg-icon {
+        width: 30px;
+        height: 25px;
+    }
+     .svg-map-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .stroke-white {
+        stroke: white;
+    }
+
+    @media screen and (max-width: 768px) {
+         .svg-map-icon {
+        width: 24px;
+        height: 24px;
+    }
+        .svg-icon {
+            width: 20px;
+        }
+
+        .stroke-white {
+            // stroke: #81808D;
+        }
+    }
+
+    .copy-right-description {
+        width: 350px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #525252;
+        // padding:0 15px;
+    }
+
+    .address {
+        color: #525252;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+}
+
+.mobileNavigationWrap {
+
+    padding-top: 38px;
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    & .menuWrap {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+
+        & .row {
+            display: flex;
+            justify-content: space-evenly;
+
+            & .menu {
+                width: 150px;
+
+                & span {
+                    color: #525252;
+                    margin-bottom: 20px;
+                }
+
+                &>.bold {
+                    color: #8A8F98;
+                    margin-bottom: 14px;
+
+                }
+            }
+        }
+    }
+}
+
+.mobileSocialWrap {
+    & .socialIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+
+    & .copyright {
+        color: #525252;
+        font-size: 16px;
+        padding-bottom: 22px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:562px) {
+    .logo{
+        width: 100% !important;
+    }
+    .newsletter {
+        & .text {
+            .heading-f50 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .description {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        & .inputSection {
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            & .button-border {
+                width: 100%;
+                margin: 0;
+
+                & button {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:561px) {
+    .maxContainerWidth{
+        padding: 0 0;
+    }
+    .copy-right-description {
+        width: 100% !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        color: #81808D !important;
+    }
+
+    .address {
+        color: #525252 !important;
+        font-size: 12px !important;
+        line-height: 15px !important;
+        width: 300px;
+    }
+
+    .mobileNavigationWrap .logo {
+        width: 100%;
+        & img {
+            width: 75%;
+        }
+    }
+
+    .mobileNavigationWrap {
+        & .menuWrap {
+            display: unset;
+
+            & .row {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .newsletter {
+        & .text {
+            & .heading-f50 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            & .description {
+                font-size: 10px !important;
+                text-align: center;
+                margin-bottom: 30px;
+                width: 41ch;
+            }
+        }
+
+        & .inputSection {
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            & .button-border {
+                width: 100%;
+                margin: 0;
+
+                & button {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .mobileSocialWrap {
+
+        & .copyright {
+            font-size: 10px;
+        }
+    }
+}

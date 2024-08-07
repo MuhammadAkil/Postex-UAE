@@ -1,0 +1,40 @@
+<!-- <div class=" py-32" >
+    <div class="flex justify-center items-center  mx-auto">
+        <div class="flex flex-col items-center justify-center gap-1 ">
+            <p class="primary-color">Our Integrations</p>
+            <h2 class="text-white text-[37px] leading-[45px] font-semibold text-center">Integrated with potential platforms</h2>
+            <div class="flex flex-wrap gap-2 my-2 max-w-[690px] min-h-[108px] mt-14">
+                <div class="  max-h-[32px] flex flex-col  justify-center"  *ngFor="let logo of logoData">
+                  
+                    <img class="md:p-5" src="assets/svgs/{{logo.img}}" alt="">
+             
+                </div>
+                <div class="  max-h-[32px] flex flex-col  justify-center"  *ngFor="let logo of logos">
+                    <img class="md:p-5" src="assets/svgs/{{logo.img}}" alt="">
+             
+                </div>
+             
+        </div>
+    </div>
+    </div> -->
+    <div class="main bg-[#F9F9F9] max-w-[1442px] lg:min-h-[894px] p-20">
+
+        <div class="mb-20">
+            <div class="text-base text-slate-500 font-medium">OUR INTEGRATIONS</div>
+        <div class="text-2xl font-medium">Daraz,Shopify & All</div>
+        <div class="text-2xl font-medium">Your <span class="text-[--sec-clr]">Ecommerce Integrations</span> In One Platform</div>
+        </div>
+        <div class="flex mt-8 justify-center">
+            <div  class="border-dashed border  flex justify-center items-center circelrounded w-[430px] h-[430px] border-green-500">
+                <div  class="border-dashed  relative circle border w-[380px] h-[380px] border-green-500" >
+                    <ng-container  *ngFor="let item of logoData;let i=index">
+                     <div class="name drop-shadow-md absolute top-12 h-[48px] w-[123px] text-center rounded font-medium  bg-white flex items-center justify-evenly" [ngStyle]="calculatePosition(i)">
+                        <img class="!w-[28px]" src="assets/svgs/{{item.logo}}" alt={{item.name}}><span>{{item.name}}</span>
+                        <!--  <img src="assets/svgs/earth.svg" alt=""> -->
+                         
+                     </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>

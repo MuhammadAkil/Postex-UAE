@@ -1,0 +1,39 @@
+<div class="my-40 ">
+    <div class="flex flex-col justify-center items-center ">
+      <p class="primary-color">OMS</p>
+      <h2 class="text-white text-[37px] leading-[45px] font-semibold text-center ">Features</h2>
+    </div>
+    <div class="flex items-center flex-col   gap-10 relative top-[12rem] left-[-36rem]">
+        <button
+          *ngFor="let channel of channelData; let i = index"
+          (click)="setActiveTab(i)"
+          [ngClass]="{
+            'bg-green-500 text-white p-2': selectedChannelIndex === i,
+            'bg-[#3F3D56] text-gray-900': selectedChannelIndex !== i
+          }"
+          class="p-1 rounded-full font-semibold transition-colors duration-300"
+        >
+        </button>
+      </div>
+    <div class="max-w-[1312px] bg-[#13131C] mx-5 lg:mx-auto rounded-[32px] h-[448px] overflow-y-auto hide-scrollbar -mt-[9rem] snapping" #scrollContainer>
+   
+      <ng-container *ngFor="let channel of channelData; let i = index">
+        <div [id]="'channel-' + i" class="flex flex-col gap-10 lg:gap-10 lg:flex-row lg:justify-evenly items-center mt-16 scroll-snap "   [ngClass]="{
+            'py-20': i ,'':i===4}">
+          <div class="flex flex-col justify-start items-start w-[85%] lg:w-auto ">
+            <h2 class="text-white text-[37px] leading-[45px] font-semibold w-[24ch]">
+              <span class="primary-color">{{ channel.heighlight}}</span> {{ channel.title }}
+            </h2>
+            <p class="text-white py-4 text-[18px] leading-[21px] font-normal max-w-[417px]">{{ channel.description }}</p>
+            <button class="rounded-full max-w-[164px] bg-primary py-2 px-4 font-semibold text-[18px] leading-[21px]">Learn More</button>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img class="lg:max-w-[400px] w-[85%]" [src]="channel.imgSrc" [alt]="channel.imgAlt">
+          </div>
+        </div>
+      </ng-container>
+  
+     
+    </div>
+  </div>
+  
